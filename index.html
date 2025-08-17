@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo-fi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="rectangle-box">
+        <!-- New bars button placed at the left side -->
+        <div class="bars-btn-container">
+            <button class="btn" id="barsBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="center-controls">
+            <button class="btn" id="backwardBtn">
+                <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="btn" id="playPauseBtn">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button class="btn" id="forwardBtn">
+                <i class="fa-solid fa-forward"></i>
+            </button>
+        </div>
+
+        <div class="volume-container">
+            <button class="btn" id="imageBtn">
+                <i class="fa-solid fa-image"></i>
+            </button>
+            <button class="btn" id="volumeBtn">
+                <i class="fa-solid fa-volume-low"></i>
+            </button>
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="50">
+        </div>
+    </div>
+
+    <div class="image-popup" id="imagePopup">
+        <div class="image-container">
+            <img src="media/bg/lofi_af.jpg" class="popup-image" alt="lofi_af">
+            <img src="media/bg/lofi_city.jpg" class="popup-image" alt="lofi_city">
+            <img src="media/bg/lofi_eve.jpg" class="popup-image" alt="lofi_eve">
+            <img src="media/bg/lofi_kit.jpg" class="popup-image" alt="lofi_kit">
+            <img src="media/bg/lofi_mrng.jpg" class="popup-image" alt="lofi_mrng">
+            <img src="media/bg/lofi_mrg.jpg" class="popup-image" alt="lofi_mrg">
+            <img src="media/bg/lofi_night.jpg" class="popup-image" alt="lofi_night">
+            <img src="media/bg/lofi_rain.jpg" class="popup-image" alt="lofi_rain">
+            <img src="media/bg/lofi_rain2.jpg" class="popup-image" alt="lofi_rain2">
+            <img src="media/bg/lofi_snow.jpg" class="popup-image" alt="lofi_snow">
+            <img src="media/bg/lofi_street.jpg" class="popup-image" alt="lofi_street">
+            <img src="media/bg/lofi_chill.jpg" class="popup-image" alt="lofi_chill">
+            <img src="media/bg/lofi_city.jpg" class="popup-image" alt="lofi_city">
+            <img src="media/bg/lofi_cityscape.jpg" class="popup-image" alt="lofi_cityscape">
+            <img src="media/bg/lofi_girl.jpg" class="popup-image" alt="lofi_girl">
+            <img src="media/bg/lofi_relax.jpg" class="popup-image" alt="lofi_relax">
+            <img src="media/bg/lofi_relax1.jpg" class="popup-image" alt="lofi_relax1">
+            <img src="media/bg/lofi_study.jpg" class="popup-image" alt="lofi_study">
+            <img src="media/bg/lofi_studyroom.jpg" class="popup-image" alt="lofi_studyroom">
+            <img src="media/bg/lofi_rain1.jpg" class="popup-image" alt="lofi_rain1">
+        </div>
+    </div>
+
+    <!-- Options dropdown -->
+    <div class="options-container" id="optionsContainer">
+        <button class="option-btn" data-option="study">Study</button>
+        <button class="option-btn" data-option="retro">Retro</button>
+        <button class="option-btn" data-option="chill">Chill</button>
+        <button class="option-btn" data-option="focus">Focus</button>
+    </div>
+
+    <audio id="audioPlayer">
+        <source src="media/song/main1.mp3" type="audio/mpeg">
+    </audio>  
+    
+<script src="style.js"></script>
+</body>
+</html>
