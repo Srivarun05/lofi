@@ -73,11 +73,11 @@ body {
     left: 10px;
 }
 
-/* Dropdown styles */
+
 .options-container {
     position: absolute;
     left: 140px;
-    top: 500px; /* Adjust this to move it closer to the bar button */
+    top: 500px; 
     background-color: #444;
     border-radius: 10px;
     display: none;
@@ -115,14 +115,14 @@ body {
     gap: 10px;
     /*max-width: 1500px;*/
     max-height: 500px;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    white-space: nowrap; /* Keeps images in a single line */
-    max-width: 90vw; /* Adjust based on screen size */
+    overflow-x: auto; 
+    white-space: nowrap; 
+    max-width: 90vw; 
 }
 
 .image-container {
 display: flex;
-gap: 10px; /* Space between images */
+gap: 10px; 
 }
 
 .popup-image {
@@ -132,7 +132,7 @@ gap: 10px; /* Space between images */
     cursor: pointer;
     border: 2px solid transparent;
     border-radius: 8px;
-    flex-shrink: 0; /* Prevents images from shrinking */
+    flex-shrink: 0; 
 }
 
 .popup-image:hover {
